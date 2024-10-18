@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: generalSans;
+    src: url(GeneralSans-Regular.ttf);
+}
+ 
+
+/* begin reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: generalSans, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* end reset */
+
+h1 {
+    padding: 40px 0px 0px 0px;
+}
+h4 {
+    padding: 10px 0px 30px 0px
+}
+
+.center-strip {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#drop-zone { 
+    border: 2px dashed #ccc; 
+    padding: 20px; 
+    text-align: center; 
+    cursor: pointer; 
+    margin: 0px 0px 30px 0px;
+} 
+
+#drop-zone.hover { 
+    background-color: #f9f9f9; 
+} 
+
+#preview-zone {
+    min-height: 20px;
+    max-height: 200px;
+    width: 100%;
+    border: 2px solid #ccc;
+    display:flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.image-preview {
+    width: 150px;
+    border: 1px solid #ccc;
+    margin: 20px 0px 20px 20px;
+    object-fit: cover;
+}
+
+.topToolBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+}
+.bottomToolBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 0px;
+    
+}
+
+.colorPickerWrapper {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    margin: 0px 0px 0px 0px;
+}
+#colorPicker {
+    width: 20px;
+    height: 20px;
+    padding:0px;
+}
+#colorPickerLabel {
+    font-size: small;
+    text-align: center;
+    margin: auto;
+}
+
+#clearButton {
+    border: 2px dashed #ffafaf;
+    background-color: #ffefef;
+}
+#clearButton:hover {
+    /* background-color: #e0c5c5; */
+    border: 2px solid #cb8b8b;
+    cursor: pointer;
+}
+
+#downloadButton {
+    border: 2px dashed #b8ffaf;
+    background-color: #f1fff0;
+
+}
+
+#downloadButton:hover {
+    /* background-color: #badeb7; */
+    border: 2px solid #96cf8e;
+    cursor: pointer;
+}
+
+#image-canvas {
+    width: 100%;
+    display: none;
+    border: 1px solid #ccc;
+}
+
+@media screen and (min-width:551px) {
+    .center-strip {
+        width: 500px;
+    }
+}
+@media screen and (max-width:550px) {
+    .center-strip {
+        width: 90%;
+    }
+}
